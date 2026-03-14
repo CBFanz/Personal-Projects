@@ -1,0 +1,63 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #000; /* Black background */
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #333;
+}
+
+/* Sidebar Active */
+.sidebar.active {
+  left: 0;
+}
+
+/* Optional page content styling */
+.content {
+  padding: 20px;
+  margin-left: 20px;
+}
